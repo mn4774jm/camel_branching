@@ -2,6 +2,7 @@ import re
 pattern = re.compile(r'\W')
 def main():
     display_banner()
+    print('Enter a sentence to be converted to camelCase')
     sentence = input('Please enter a sentence. Any sentence at all: ')
     outputs = camelCase(sentence)
     print(outputs)
@@ -27,6 +28,7 @@ def display_banner():
     msg = 'AWESOME camelCaseGenerator PROGRAM'
     stars = '*' * len(msg)
     print(f'\n {stars} \n {msg} \n {stars}\n')
+
 
 
 main()
